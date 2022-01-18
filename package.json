@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start --dev-client",
     "android": "react-native run-android",
     "ios": "react-native run-ios --simulator='iPhone 13'",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "start": "react-native start",
+    "test": "jest",
+    "api": "json-server ./src/services/server.json --host 192.168.1.236 --port 3333 --delay 700"
   },
   "dependencies": {
     "expo": "~44.0.2",
