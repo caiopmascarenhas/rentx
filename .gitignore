@@ -33,11 +33,24 @@ google-services.json
 
 # node.js
 #
-node_modules/
+node_modules/*
 npm-debug.log
 yarn-error.log
 yarn.lock
 Podfile.lock
+
+# watermelondb
+#
+!node_modules/@nozbe
+node_modules/@nozbe/*
+!node_modules/@nozbe/watermelondb
+node_modules/@nozbe/watermelondb/*
+!node_modules/@nozbe/watermelondb/native
+node_modules/@nozbe/watermelondb/native/*
+!node_modules/@nozbe/watermelondb/native/shared
+node_modules/@nozbe/watermelondb/native/shared/*
+!node_modules/@nozbe/watermelondb/native/shared/simdjson.cpp
+!node_modules/@nozbe/watermelondb/native/shared/simdjson.h
 
 # BUCK
 buck-out/
